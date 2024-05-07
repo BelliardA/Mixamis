@@ -11,6 +11,7 @@ if (isset($_POST["mail"]) && isset($_POST["password"] )&& isset($_POST["name"]) 
     $name=$_POST["name"];
     $firstname=$_POST["firstname"];
     $school=$_POST["school"];
+    register($mail, $password, $name, $firstname, $school);
 }
 else
 {
@@ -20,10 +21,6 @@ else
     $firstname="";
     $school="";
 }
-
-
-
-register($mail, $password, $name, $firstname, $school);
 
 if (isLoggedOn()){
     include "$racine/controleur/vueValidConnexion.php";
