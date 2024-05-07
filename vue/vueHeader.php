@@ -4,7 +4,7 @@
 
 <!-- suite du code sans utilisé de body ou html -->
 <div class="nav-bar">
-    <a href="index.html"> <img src="style/images/accueil/logo.svg" class="logo" alt="logo"></a>
+    <a href="index.html"> <img src="style/image/accueil/logo.svg" class="logo" alt="logo"></a>
     <div class="buttons-div">
         <a href="rejoindre-groupe.html">
             <span>Rejoindre un groupe</span>
