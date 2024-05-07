@@ -18,5 +18,5 @@ if(isset($_GET['search'])){
     header("Location: ./?action=group&idGroup=".$_GET['search']);
 }
 
-
+include "$racine/vue/vueHeader.php";
 include "$racine/vue/vueMenu.php";
