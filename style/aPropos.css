@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+h1 {
+    color: #000;
+    font-family: "Gasoek One";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2 {
+    color: #000;
+    text-align: right;
+
+    /* H1 */
+    font-family: "Gasoek One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+p, label{
+    color: #000;
+
+/* H3 */
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+main{
+    background-image: url('image/FOND_FORME_A_PROPOS.svg');
+    background-size: cover;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    margin : 0 0 0 100px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.bouton {
+    --bg: transparent;
+    --hover-bg: var(--bg);
+    --hover-text: black;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+    padding: 10px 35px 10px 35px;
+    box-shadow: -0.25rem 0.25rem black;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    width: 114px;
+    text-align: center;
+}
+
+.bouton:hover{
+    transform: translateX(-0.25rem) translateY(0.25rem);
+    box-shadow: 0rem 0rem black;
+}
+
+.explication{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 45vw;
+}
+
+.plot-twist{
+    display: flex;
+    align-self: end;
+    flex-direction: column;
+    gap: 2px;
+    width: 45vw;
+    margin-right: 100px;
+    align-items: end;
+}
+
+
+.contact {
+    display: flex;
+    align-items: center  ;
+    flex-direction: column;
+    align-self: center;
+    gap: 150px;
+}
+
+.nous-contacter {
+    display: flex;
+    gap: 10%;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 30vw;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: -0.5rem 0.5rem black;
+    align-items: end;
+    padding: 20px 40px 70px 20px;
+}
+
+
+.formulaire form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+}
+
+.formulaire form div {
+    display: flex;
+    gap: 10px;
+}
+
+.formulaire input, .formulaire textarea{
+    border-radius: 8px;
+    border: 3px solid var(--Black, #000);
+    background: var(--White, #FFF);
+}
+
+.formulaire input{
+    width: 20vw;
+}
+
+.formulaire textarea{
+    width: 20vw;
+    height: 30vh;
+}
+
+.liens-utiles{
+    width: 20vw;
+    height: 30%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: -0.5rem 0.5rem black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mail, .telephone{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.mail a , .telephone a{
+    padding: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}

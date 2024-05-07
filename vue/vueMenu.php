@@ -1,7 +1,5 @@
 <h1>menu</h1>
 
-<h2>Connecté en tant que : <?=$_SESSION['mail'];?></h2>
-
 <ul>
     <li><a href="./?action=connexion">Connexion</a></li>
     <?php
@@ -11,6 +9,7 @@
         <?php
     }
     ?>
+    <li><a href="./?action=aPropos">A Propos</a></li>
 </ul>
 
 <form action="./?action=defaut">

@@ -10,6 +10,7 @@ function controleurPrincipal($action) {
     $lesActions["detailGroup"] = "detailGroup.php";
     $lesActions["group"]= "group.php";
     $lesActions["addUserInGroup"]= "addUserInGroup.php";
+    $lesActions["aPropos"]= "apropos.php";
 
 
     if (array_key_exists($action, $lesActions)) {
