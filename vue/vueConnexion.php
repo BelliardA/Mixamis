@@ -1,12 +1,17 @@
-<h1>Connexion</h1>
-<form action="./?action=connexion" method="POST">
+<head>
+    <link rel="stylesheet" href="style/connexion.css">
+    <title>Connexion</title>
+</head>
 
-    <input type="text" name="mail" placeholder="Email de connexion" /><br />
-    <input type="password" name="password" placeholder="Mot de passe"  /><br />
-    <input type="submit" />
 
-</form>
-
+<section>
+    <h1>Connexion</h1>
+    <form action="./?action=connexion" method="POST">
+        <input type="text" name="mail" placeholder="Email de connexion" /><br />
+        <input type="password" name="password" placeholder="Mot de passe"  /><br />
+        <input type="submit" />
+    </form>
+</section>
 <h2>Inscription</h2>
     <form action="./?action=register" method="POST">
         <div>
