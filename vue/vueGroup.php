@@ -20,6 +20,3 @@
     else{?>
     <a href="./?action=addUserInGroup&idGroup=<?=$id_group?>">Rejoindre le groupe</a>
 <?php }?>
-
-
-<?php

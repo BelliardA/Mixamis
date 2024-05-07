@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2vw 4.3vw;
+    width: 100vw;
+}
+.buttons-div{
+    width: fit-content;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.buttons-div{
+    display: flex;
+    gap: 15%;
+    height: fit-content;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 20px;
+    width: 75vw;
+}
+.buttons-div a{
+    --bg: transparent;
+    --hover-bg: var(--bg);
+    --hover-text: black;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+    padding: 10px 35px 10px 35px;
+    box-shadow: -0.25rem 0.25rem black;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+
+}
+.buttons-div a:hover{
+    transform: translateX(-0.25rem) translateY(0.25rem);
+    box-shadow: 0rem 0rem black;
+}
