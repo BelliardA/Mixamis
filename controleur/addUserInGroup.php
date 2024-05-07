@@ -12,5 +12,5 @@ $id_group = $_GET["idGroup"];
 
 addGroupsUser($mail, $id_group, false);
 
-
+include "$racine/vue/vueHeader.php";
 header("Location:./?action=group&idGroup=$id_group");

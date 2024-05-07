@@ -23,5 +23,5 @@ if(isOrgaByMail($_SESSION["mail"], $id_group)["is_orga"] == 1){
 }
 
 
-
+include "$racine/vue/vueHeader.php";
 include "$racine/vue/vueGroup.php";

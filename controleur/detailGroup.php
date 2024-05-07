@@ -16,4 +16,5 @@ if(isset($_POST["time"])){
     exit();
 }
 
+include "$racine/vue/vueHeader.php";
 include_once "$racine/vue/vueDetailsGroup.php";
