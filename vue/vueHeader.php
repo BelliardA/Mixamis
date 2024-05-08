@@ -1,4 +1,5 @@
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="style/header.css">
 </head>
 
@@ -6,7 +7,7 @@
 <div class="nav-bar">
     <a href="./?action=defaut"> <img src="style/image/accueil/logo.svg" class="logo" alt="logo"></a>
     <div class="buttons-div">
-        <a href="">
+        <a href="./?action=search">
             <span>Rejoindre un groupe</span>
         </a> 
         <a href="./?action=addGroup">
@@ -16,5 +17,5 @@
             <span>À propos</span>
         </a>
     </div>
-    <a href="profil.html"> <img src="style/image/accueil/logo-user.svg" class="user-logo" alt="user-logo"></a>
+    <a href="./?action=profil"> <img src="style/image/accueil/logo-user.svg" class="user-logo" alt="user-logo"></a>
 </div>
