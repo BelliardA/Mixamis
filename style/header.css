@@ -12,6 +12,9 @@
     padding: 2vw 4.3vw;
     width: 100vw;
 }
+.nav-bar img{
+    height: 94px;
+}
 .buttons-div{
     width: fit-content;
 }
