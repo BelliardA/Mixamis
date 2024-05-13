@@ -116,3 +116,7 @@ input{
     box-shadow: -0.25rem 0.25rem black;
     color: black;
 }
+.button:hover{
+    transform: translateX(-0.25rem) translateY(0.25rem);
+    box-shadow: 0rem 0rem black;
+}

@@ -36,7 +36,7 @@
                     <input type="checkbox" required> <p>I agree to the Terms of Use and Privacy Policy</p>
                 </div>
                 <div class="sign-up-links">
-                        <a class="button"><strong> sign-up</strong></a>
+                        <a class="button" action="./?action=register"><strong> sign-up</strong></a>
                         <a><strong> Learn more</strong></a>
                 </div>
             </form> 
