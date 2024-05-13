@@ -24,3 +24,7 @@
         <button type="submit">S'inscrire</button>
     </div>
 </form>
+<?php
+if (isset($message)){
+    echo "<p>$message</p>";
+}
