@@ -107,5 +107,5 @@ a{
 }
 .button:hover{
     transform: translateX(-0.25rem) translateY(0.25rem);
-    box-shadow: 0rem 0rem black;
+    box-shadow: 0rem 0rem black;
 }

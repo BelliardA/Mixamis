@@ -12,8 +12,6 @@ session_start();
 
 $groups = getGroupPublic();
 
-//search group
-
 if(isset($_GET['search'])){
     header("Location: ./?action=group&idGroup=".$_GET['search']);
 }
