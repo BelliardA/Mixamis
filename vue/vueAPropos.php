@@ -13,6 +13,9 @@
             </div>
             <a href="./?action=connexion" class="bouton">Inscris-toi</a>
         </section>
+        <div class="jambe-droite">
+            <img src="style/image/a-propos/JAMBES_droite.svg">
+        </div>
         <section class="explication">
             <p>Plonge-toi dans une aventure extrascolaire, sociale et unique à Genève !</p>
             <p>Tu es étudiant.e et tu souhaites tisser davantage de liens durant tes années d’études supérieures ?</p>
@@ -26,6 +29,9 @@
             <p>Tu peux toi-même devenir organisateur de groupes ;</p>
             <p>Réunis tes potes, tes camarades ou crée carrément un groupe public ouvert à n’importe quel.le étudiant.e pour créer des souvenirs en-dehors du cadre scolaire !</p>
         </section>
+        <div class="jambe-gauche">
+            <img src="style/image/a-propos/JAMBES_gauche.svg">
+        </div>
     
         <section class="contact">
             <h2>Contact</h2>
@@ -73,7 +79,14 @@
             </div>
         </section>
     </section>
+    <footer>
+        <a href="index.html"> <img src="style/image/accueil/logo.svg" class="logo" alt="logo"></a>
+        <a href="#">Créer un groupe</a>
+        <a href="#">Rejoindre un groupe</a>
+        <a href="#">À propos</a>
+        <div id="logos">
+            <img src="style/image/footer/Logos.svg">
+            <img src="style/image/footer/Group 2.svg">
+        </div>
+    </footer>
 </main>
-
-
-

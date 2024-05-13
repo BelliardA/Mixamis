@@ -1,13 +1,22 @@
-<h2>Créer un groupe</h2>
-    <form action="./?action=addGroup" method="POST">
-        <div>
-            <label for="name">Nom du groupe *:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div>
+<head>
+    <link rel="stylesheet" href="style/addGroup.css">
+</head>
+<section>
+    <div class="titre">
+        <h2>Créer un groupe</h2>
+    </div>
+    <div class="information">
+        <label for="name">Nom du groupe *:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
             <label for="isPublic">Groupe Public * :</label>
             <input type="checkbox" id="isPublic" name="isPublic">
         </div>
+    </div>
+    <form action="./?action=addGroup" method="POST">
+
+
         <div>
             <label for="description">description :</label>
             <input type="text" id="description" name="description">
@@ -32,3 +41,4 @@
             <button type="submit">Créer un groupe</button>
         </div>
     </form>
+</section>

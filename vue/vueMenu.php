@@ -78,6 +78,9 @@
         </div>
         <a href="./?action=connexion" class="bouton">Inscris-toi</a>
     </section>
+    <div class="jambe-gauche">
+        <img src="style/image/accueil/JAMBES_gauche.svg">
+    </div>
     <section class="section-bulle">
         <h2>LOISIR & <br> DIVERTISSEMENT</h2>
         <h3>Phrase à trouver</h3>
