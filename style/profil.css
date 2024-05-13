@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+.body{
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url('image/profile/FOND_PROFIL.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    height: 950px;
+}
+
+.profile-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 70px 80px;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 50vw;
+    height: 504px;
+    gap: 100px;
+    box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+}
+.avatar{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 400px;
+    height: 520px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    line-height: 32px;
+}
+.avatar-opt-btn{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    line-height: 40px;
+}
+.avatar-opt-btn a{
+    background: rgb(253, 253, 253);
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+    box-shadow: -0.25rem 0.25rem black;
+    text-decoration: none;
+    color: black;
+    padding:0 35px;
+    align-items: center;
+}
+.avatar-opt-btn a:hover{
+    background-color: #3A6EA5;
+}
+.avatar-option-div-btn{
+    display: none;
+}
+.avatar-opt-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 56px;
+    margin-bottom: 50px;
+}
+.avatar-opt-div img:hover{
+    cursor: pointer;
+}
+.btn-valider{
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+    width: fit-content;
+    box-shadow: -0.25rem 0.25rem black;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 34px;
+    display: flex;
+    align-items: center;
+}
+.btn-valider:hover{
+    background-color: rgba(0, 128, 0, 0.616);
+}
+/*------------------------footer-------------------------------*/
+footer{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 119px 0 57px 0;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+#logos{
+    display: flex;
+    margin-left: 300px;
+}

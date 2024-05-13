@@ -3,7 +3,7 @@
 if(!function_exists('connexionPDO')) {
 function connexionPDO() {
     $login = "root";            //enter the login
-    $mdp = "";              //enter the password
+    $mdp = "root";              //enter the password
     $bd = "mixamis";               //enter the name of the database
     $serveur = "localhost";          // enter the name of the server
 

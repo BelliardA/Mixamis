@@ -20,9 +20,9 @@ h2 {
 }
 a{
     text-decoration: none;
-    color: black;
     width: fit-content;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 p, label{
@@ -38,7 +38,7 @@ line-height: normal;
 
 .introduction {
     padding-left: 98px;
-    margin:200px 0 100px 0;
+    padding: 200px 100px 100px;
     display: flex;
     flex-direction: column;
     gap: 31px;
@@ -48,8 +48,6 @@ line-height: normal;
     justify-content: flex-end;
     margin-top: 300px;
 }
-
-
 .bouton {
     --bg: white;
     --hover-bg: var(--bg);
@@ -96,12 +94,13 @@ line-height: normal;
     align-items: center  ;
     flex-direction: column;
     align-self: center;
-    gap: 150px;
+    margin-top: 100px;
 }
 
 .nous-contacter {
     display: flex;
     gap: 10%;
+    padding: 199px ;
 }
 
 .formulaire{
@@ -173,7 +172,7 @@ line-height: normal;
 }
 /*-------------------footer-----------------------*/
 footer{
-    background-color: white;
+    background-color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;

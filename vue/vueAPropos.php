@@ -16,12 +16,17 @@
             <img src="style/image/a-propos/JAMBES_droite.svg">
     </div>
     <section class="explication">
-            <p>Plonge-toi dans une aventure extrascolaire, sociale et unique à Genève !</p>
-            <p>Tu es étudiant.e et tu souhaites tisser davantage de liens durant tes années d’études supérieures ?</p>
-            <p>Notre plateforme est là pour te connecter aux autres dans la même situation que toi.</p>
-            <p>Collégiens, apprentis, à l’uni ou encore doctorants, vous êtes toutes et tous la bienvenue à ce mélange entre écoles genevoises (toutes filières confondues).</p>
-            <p>Grâce à MIXAMIS mais surtout grâce à ta carte étudiante, tu peux avoir accès à une multitude d'activités genevoises à prix réduits. </p>
-            <p>Tu as bien compris, profite plus de Genève et de ses environs avec ton budget étudiant, des prix abordables et des groupes de tout âge seront au rendez-vous.</p>
+        <p>
+            Plonge-toi dans une aventure extrascolaire, sociale et unique à Genève ! <br><br>
+            Tu es étudiant.e et tu souhaites tisser davantage de liens durant tes années d’études<br> supérieures ?<br><br>
+            Notre plateforme est là pour te connecter aux autres dans la même situation que toi.<br><br>
+            Collégiens, apprentis, à l’uni ou encore doctorants, vous êtes toutes et tous la bienvenue à ce<br>
+            mélange entre écoles genevoises (toutes filières confondues).<br><br>
+            Grâce à MIXAMIS mais surtout grâce à ta carte étudiante, tu peux avoir accès à une multitude<br>
+            d'activités genevoises à prix réduits.<br><br>
+            Tu as bien compris, profite plus de Genève et de ses environs avec ton budget étudiant, des <br>
+            prix abordables et des groupes de tout âge seront au rendez-vous.
+        </p>
     </section>
     <section class="plot-twist">
         <h2>Plot-twist</h2>
