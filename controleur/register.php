@@ -13,6 +13,9 @@ if (isset($_POST["mail"]) && isset($_POST["password"] )&& isset($_POST["name"]) 
     $school=$_POST["school"];
     if(isEtu($mail)){
         register($mail, $password, $name, $firstname, $school);
+        $code = genererCodeAleatoire();
+        sendMail($mail, $code);
+        header("Location: ./?action=validate&mail=$mail&code=$code");
     }else{
         $message = "Vous devez avoir une adresse mail d'une université suisse pour vous inscrire";
     }
@@ -79,12 +82,12 @@ function sendMail($mail, $code){
     $message = "Bonjour,\n\n";
     $message .= "Voici votre code de vérification : $code\n\n";
     $message .= "Entrez ce code pour vérifier votre compte.";
-    
+
     // Entête de l'e-mail
     $headers = "From: votre_adresse@example.com";
-    
+
     // Envoyer l'e-mail
-    if (mail($email, $sujet, $message, $headers)) {
+    if (mail($mail, $sujet, $message, $headers)) {
         echo "Un e-mail de vérification a été envoyé à votre adresse.";
     } else {
         echo "Erreur lors de l'envoi de l'e-mail.";
