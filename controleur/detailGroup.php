@@ -4,6 +4,7 @@ if ( $_SERVER["SCRIPT_FILENAME"] == __FILE__ ){
 }
 
 include_once "$racine/model/bd.activities.php";
+include_once "$racine/model/bd.authentification.inc.php";
 
 $timeActivities = getTimeActivitiesById($_GET["idActivity"]);
 

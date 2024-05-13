@@ -10,11 +10,12 @@
     align-items: center;
     box-sizing: border-box;
     padding: 2vw 4.3vw;
-    width: 100vw;
+    width: 98vw;
     background-color: transparent;
 }
 .nav-bar img{
     height: 94px;
+
 }
 .buttons-div{
     width: fit-content;
