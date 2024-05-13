@@ -7,9 +7,22 @@
 <div class="nav-bar">
     <a href="./?action=defaut"> <img src="style/image/accueil/logo.svg" class="logo" alt="logo"></a>
     <div class="buttons-div">
-        <a href="./?action=search">
-            <span>Rejoindre un groupe</span>
-        </a> 
+        <?php
+        if(isLoggedOn()){
+            ?>
+            <a href="./?action=connexion">
+                <span>Chercher un group</span>
+            </a>
+            <?php
+        }
+        else{
+            ?>
+            <a href="./?action=search">
+                <span>Chercher un group</span>
+            </a>
+            <?php
+        }
+        ?>
         <a href="./?action=addGroup">
             <span>Créer un groupe</span>
         </a>
