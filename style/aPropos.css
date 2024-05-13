@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+main{
+    background-image: url('image/a-propos/FOND_FORME_A_PROPOS.svg');
+}
 h1 {
-    color: #000;
+    color: #ee0101;
     font-family: "Gasoek One";
     font-size: 72px;
     font-style: normal;
@@ -35,10 +37,6 @@ font-weight: 400;
 line-height: normal;
 }
 
-main{
-    background-image: url('image/FOND_FORME_A_PROPOS.svg');
-    background-size: cover;
-}
 .page{
     display: flex;
     flex-direction: column;
@@ -50,14 +48,17 @@ main{
     display: flex;
     flex-direction: column;
 }
-
+.jambe-droite{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 .bouton {
-    --bg: transparent;
+    --bg: white;
     --hover-bg: var(--bg);
     --hover-text: black;
-    background: transparent;
+    background: white;
     border: 2px solid black;
     border-radius: 10px;
     transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
@@ -91,7 +92,11 @@ main{
     margin-right: 100px;
     align-items: end;
 }
-
+.jambe-gauche img{
+    width: 72.5vw;
+    height: 248px;
+    margin-bottom: 289px;
+}
 
 .contact {
     display: flex;
@@ -172,4 +177,16 @@ main{
     border: 2px solid black;
     text-decoration: none;
     color: black;
+}
+/*-------------------footer-----------------------*/
+footer{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 119px 0 57px 0;
+}
+#logos{
+    display: flex;
+    margin-left: 300px;
 }

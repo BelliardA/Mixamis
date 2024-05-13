@@ -1,5 +1,6 @@
 <head>
     <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/aPropos.css">
 </head>
 
 <!-- suite du code sans utilisé de body ou html -->

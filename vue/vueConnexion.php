@@ -32,5 +32,4 @@
         </div>
         <img src="style/image/log-in/JAMBES_3-droite.svg" id="image-droite">
     </div>
-
 </section>
