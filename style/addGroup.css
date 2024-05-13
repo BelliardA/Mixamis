@@ -1,0 +1,11 @@
+section{
+    background-image: url('image/FOND_PROFIL.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 78vh;
+    width: 100%;
+}
+.titre-information{
+    display: flex;
+    
+}
