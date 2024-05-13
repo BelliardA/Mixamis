@@ -42,5 +42,7 @@
             </form> 
         </div>
     </div>
+
     <img src="style/image/inscription/JAMBES-droite.svg" id="image-droite">
 </div>
+

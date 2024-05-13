@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="login-links">
-                        <a href="#" class="button">Login</a>
+                        <a href=".?/action=action" class="button">Login</a>
                         <a href="#"> <strong> Forgot password ?</strong></a>
                         <a href="./?action=register"> <strong>Sign-Up</strong></a>
                     </div>
