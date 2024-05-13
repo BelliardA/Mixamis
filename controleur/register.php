@@ -13,9 +13,9 @@ if (isset($_POST["mail"]) && isset($_POST["password"] )&& isset($_POST["name"]) 
     $school=$_POST["school"];
     if(isEtu($mail)){
         register($mail, $password, $name, $firstname, $school);
-        $code = genererCodeAleatoire();
-        sendMail($mail, $code);
-        header("Location: ./?action=validate&mail=$mail&code=$code");
+        // $code = genererCodeAleatoire();
+        // $reponse = sendMail($mail, $code);
+        // echo $reponse;
     }else{
         $message = "Vous devez avoir une adresse mail d'une université suisse pour vous inscrire";
     }
@@ -84,7 +84,7 @@ function sendMail($mail, $code){
     $message .= "Entrez ce code pour vérifier votre compte.";
 
     // Entête de l'e-mail
-    $headers = "From: votre_adresse@example.com";
+    $headers = "From: <support@mixamis.ch>" . "\r\n";
 
     // Envoyer l'e-mail
     if (mail($mail, $sujet, $message, $headers)) {

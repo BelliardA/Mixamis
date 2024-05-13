@@ -13,6 +13,7 @@ function controleurPrincipal($action) {
     $lesActions["aPropos"]= "apropos.php";
     $lesActions["profil"]= "profil.php";
     $lesActions["search"]= "searchGroup.php";
+    $lesActions["validMail"]= "validMail.php";
 
 
     if (array_key_exists($action, $lesActions)) {
