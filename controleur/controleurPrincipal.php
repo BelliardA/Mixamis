@@ -2,7 +2,7 @@
 
 function controleurPrincipal($action) {
     $lesActions = array();
-    $lesActions["defaut"] = "menu.php "; 
+    $lesActions["defaut"] = "menu.php"; 
     $lesActions["connexion"] = "connexion.php";
     $lesActions["register"] = "register.php";
     $lesActions["deconnexion"] = "deconnexion.php";
@@ -11,6 +11,8 @@ function controleurPrincipal($action) {
     $lesActions["group"]= "group.php";
     $lesActions["addUserInGroup"]= "addUserInGroup.php";
     $lesActions["aPropos"]= "apropos.php";
+    $lesActions["profil"]= "profil.php";
+    $lesActions["search"]= "searchGroup.php";
 
 
     if (array_key_exists($action, $lesActions)) {

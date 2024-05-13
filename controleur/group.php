@@ -5,6 +5,7 @@ if ( $_SERVER["SCRIPT_FILENAME"] == __FILE__ ){
 
 include_once "$racine/model/bd.groups.inc.php";
 include_once "$racine/model/bd.activities.php";
+include_once "$racine/model/bd.authentification.inc.php";
 
 session_start();
 
@@ -23,5 +24,5 @@ if(isOrgaByMail($_SESSION["mail"], $id_group)["is_orga"] == 1){
 }
 
 
-
+include "$racine/vue/vueHeader.php";
 include "$racine/vue/vueGroup.php";

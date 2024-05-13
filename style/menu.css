@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+h1, h2, h3{
+    color: #000;
+    font-family: "Gasoek One";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+h1{
+    font-size: 72px;
+}
+h2{
+    font-size: 64px;
+}
+h3{
+    font-size: 52px;
+}
+p, label{
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+/* premiere partis */
+.section-titre{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 30px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.bouton {
+    --bg: transparent;
+    --hover-bg: var(--bg);
+    --hover-text: black;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+    padding: 10px 35px 10px 35px;
+    box-shadow: -0.25rem 0.25rem black;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    width: 114px;
+    text-align: center;
+}
+
+.bouton:hover{
+    transform: translateX(-0.25rem) translateY(0.25rem);
+    box-shadow: 0rem 0rem black;
+}
+
+/* deuxième partis */
+
+.section-bulle{
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    text-align: right;
+    background-image: url(image/BULLE.svg);
+    background-size: cover;
+}
+
+.card-bulle{
+    background-color: #AADC80;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:30px 15vw 0 15vw;
+    height: 100vh;
+}
+
+.card{
+    height: 50%;
+    width: 70%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: -0.25rem 0.25rem black;
+    padding: 10px;
+}

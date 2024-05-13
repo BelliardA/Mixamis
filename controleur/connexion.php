@@ -16,6 +16,7 @@ else
     $mdp="";
 }
 
+include "$racine/vue/vueHeader.php";
 if (isLoggedOn()){
     $message = "Connexion réussie";
     include "$racine/vue/vueValidConnexion.php";

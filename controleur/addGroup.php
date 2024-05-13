@@ -29,9 +29,10 @@ if(isset($result) && $result){
     $mail = $_SESSION["mail"];
     var_dump($mail);
     addGroupsUser($mail, $ulid, 1);
-
+    include "$racine/vue/vueHeader.php";
     header("Location:./?action=detailGroup&idGroup=$ulid&idActivity=$id_activity");
 }else{
+    include "$racine/vue/vueHeader.php";
     include "$racine/vue/vueAddGroup.php";
 }
 

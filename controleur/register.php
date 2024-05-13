@@ -22,10 +22,12 @@ else
     $school="";
 }
 
+include "$racine/vue/vueHeader.php";
+
 if (isLoggedOn()){
     include "$racine/controleur/vueValidConnexion.php";
 }
 else{
-    include "$racine/vue/vueConnexion.php";
+    include "$racine/vue/vueInscription.php";
 }
 
