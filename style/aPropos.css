@@ -1,30 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-main{
+main {
+    width: 100%;
+    box-sizing: border-box;
     background-image: url('image/a-propos/FOND_FORME_A_PROPOS.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 h1 {
-    color: #ee0101;
-    font-family: "Gasoek One";
+    font-family: "Gasoek One", sans-serif;
     font-size: 72px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 h2 {
-    color: #000;
-    text-align: right;
-
-    /* H1 */
-    font-family: "Gasoek One";
     font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 900;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    cursor: pointer;
+}
 
 p, label{
     color: #000;
@@ -37,20 +36,17 @@ font-weight: 400;
 line-height: normal;
 }
 
-.page{
-    display: flex;
-    flex-direction: column;
-    gap: 200px;
-    margin : 0 0 0 100px;
-}
-
 .introduction {
+    padding-left: 98px;
+    margin:200px 0 100px 0;
     display: flex;
     flex-direction: column;
+    gap: 31px;
 }
 .jambe-droite{
     display: flex;
     justify-content: flex-end;
+    margin-top: 300px;
 }
 
 
@@ -77,20 +73,17 @@ line-height: normal;
 }
 
 .explication{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    width: 45vw;
+    margin: 76px 863px 0 100px;
 }
 
 .plot-twist{
     display: flex;
-    align-self: end;
     flex-direction: column;
-    gap: 2px;
-    width: 45vw;
-    margin-right: 100px;
-    align-items: end;
+    align-items: flex-end;
+    text-align: right;
+    margin: 275px 102px 92px 535px;
+    font-weight: 600;
+    font-size: 16px;
 }
 .jambe-gauche img{
     width: 72.5vw;
