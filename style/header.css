@@ -11,7 +11,7 @@
     box-sizing: border-box;
     padding: 2vw 4.3vw;
     width: 98vw;
-    background-color: transparent;
+    background: transparent;
 }
 .nav-bar img{
     height: 94px;
