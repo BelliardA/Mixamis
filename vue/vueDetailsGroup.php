@@ -7,7 +7,7 @@
                 <label for="<?= $timeActivity["start_time"] ?>">
                     <?= $timeActivity["start_time"] ?>
                 </label>
-            <input type="radio" id="<?= $timeActivity["start_time"] ?>" name="time" value="<?= $timeActivity["start_time"] ?>" required>
+                <input type="radio" id="<?= $timeActivity["start_time"] ?>" name="time" value="<?= $timeActivity["start_time"] ?>" required>
             <?php endif; ?>
         </div>
     <?php endforeach; ?>

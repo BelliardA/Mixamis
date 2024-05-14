@@ -5,18 +5,22 @@
     <div class="titre">
         <h2>Créer un groupe</h2>
     </div>
-    <div class="information">
-        <label for="name">Nom du groupe *:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-            <label for="isPublic">Groupe Public * :</label>
-            <input type="checkbox" id="isPublic" name="isPublic">
-        </div>
-    </div>
     <form action="./?action=addGroup" method="POST">
 
-
+        <div class="information">
+            <label for="name">Nom du groupe *:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+                <label for="isPublic">Type de Groupe :</label>
+                <div>
+                    <label for="isPublic">Privé</label>
+                    <input type="radio" id="private" name="isPublic" value="0">
+                    <label for="isPublic">Public</label>
+                    <input type="radio" id="public" name="isPublic" value="1">
+                </div>
+            </div>
+        </div>
         <div>
             <label for="description">description :</label>
             <input type="text" id="description" name="description">

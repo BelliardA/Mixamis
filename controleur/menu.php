@@ -8,8 +8,6 @@ include_once "$racine/model/bd.authentification.inc.php";
 include_once "$racine/model/bd.groups.inc.php";
 include_once "$racine/model/bd.activities.php";
 
-session_start();
-
 $groups = getGroupPublic();
 
 if(isset($_GET['search'])){
@@ -18,3 +16,4 @@ if(isset($_GET['search'])){
 
 include "$racine/vue/vueHeader.php";
 include "$racine/vue/vueMenu.php";
+include "$racine/vue/vueFooter.php";

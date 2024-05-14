@@ -19,3 +19,4 @@ if(isset($_POST["time"])){
 
 include "$racine/vue/vueHeader.php";
 include_once "$racine/vue/vueDetailsGroup.php";
+include "$racine/vue/vueFooter.php";

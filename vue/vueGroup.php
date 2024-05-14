@@ -18,5 +18,7 @@
     <p>Vous participer a cet évènement</p>
 <?php }
     else{?>
-    <a href="./?action=addUserInGroup&idGroup=<?=$id_group?>">Rejoindre le groupe</a>
+    <br>
+    <br>
+    <a class="bouton" href="./?action=addUserInGroup&idGroup=<?=$id_group?>">Rejoindre le groupe</a>
 <?php }?>
