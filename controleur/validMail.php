@@ -20,3 +20,4 @@ if(isset($_POST['code_utilisateur']) && isset($_GET['code'])){
 
 include "$racine/vue/vueHeader.php";
 include "$racine/vue/vueValidMail.php";
+include "$racine/vue/vueFooter.php";

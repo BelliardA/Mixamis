@@ -25,3 +25,4 @@ else{
     $message = "Connexion échouée";
     include "$racine/vue/vueConnexion.php";
 }
+include "$racine/vue/vueFooter.php";

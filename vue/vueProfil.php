@@ -40,14 +40,4 @@
 
         </div>
 </div>
-    <footer>
-        <a href="index.html"> <img src="style/image/accueil/logo.svg" class="logo" alt="logo"></a>
-        <a href="#">Créer un groupe</a>
-        <a href="#">Rejoindre un groupe</a>
-        <a href="#">À propos</a>
-        <div id="logos">
-            <img src="style/image/footer/Logos.svg">
-            <img src="style/image/footer/Group 2.svg">
-        </div>
-    </footer>
-    <script src="style/profil.js"></script>
+<script src="style/profil.js"></script>

@@ -8,3 +8,4 @@ include_once "$racine/model/bd.authentification.inc.php";
 
 include "$racine/vue/vueHeader.php";
 include "$racine/vue/vueProfil.php";
+include "$racine/vue/vueFooter.php";

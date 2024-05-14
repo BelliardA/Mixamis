@@ -7,3 +7,4 @@ include_once "$racine/model/bd.authentification.inc.php";
 
 include "$racine/vue/vueHeader.php";
 include "$racine/vue/vueJoinGroup.php";
+include "$racine/vue/vueFooter.php";

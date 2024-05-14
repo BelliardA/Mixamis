@@ -18,3 +18,22 @@ function addGroupsUser($mail, $id_group, $is_orga) {
     }
     return $resultat;
 }
+
+function getuserInGroup($id_group){
+    try {
+        $cnx = connexionPDO();
+        $req = $cnx->prepare("select mail, is_orga from groups_user where id_group=:id_group");
+        $req->bindValue(':id_group', $id_group, PDO::PARAM_STR);
+        $req->execute();
+        
+        $ligne = $req->fetch(PDO::FETCH_ASSOC);
+        while ($ligne) {
+            $resultat[] = $ligne;
+            $ligne = $req->fetch(PDO::FETCH_ASSOC);
+        }
+    } catch (PDOException $e) {
+        print "Erreur !: " . $e->getMessage();
+        die();
+    }
+    return $resultat;
+}

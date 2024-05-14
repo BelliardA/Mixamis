@@ -8,17 +8,24 @@ include_once "$racine/model/bd.activities.php";
 include_once "$racine/model/bd.groups_user.php";
 include_once "$racine/model/bd.authentification.inc.php";
 
+// Démarrer la session
 session_start();
+
 $activities = getActivities();
 
 if (isset($_POST["name"]) && isset($_POST["id_activity"])){
     $name=$_POST["name"];
     $description=$_POST["description"];
-    if(isset($_POST["isPublic"])){
-        $isPublic = 1;
-    }else{
-        $isPublic = 0;
+    if (isset($_POST["isPublic"])) {
+        if ($_POST["isPublic"] == "1") {
+            $isPublic = 1; // Public
+        } else {
+            $isPublic = 0; // Privé
+        }
+    } else {
+        $isPublic = 0; // Par défaut à Privé
     }
+    
     $id_activity=$_POST["id_activity"];
 
     $ulid = generateULID();
@@ -34,6 +41,7 @@ if(isset($result) && $result){
 }else{
     include "$racine/vue/vueHeader.php";
     include "$racine/vue/vueAddGroup.php";
+    include "$racine/vue/vueFooter.php";
 }
 
 function verifActivityDipo($idActivity){

@@ -4,7 +4,7 @@
     <title>Connexion</title>
 </head>
 
-
+<?= $message ?>
 <section>
     <div class="div-body">
         <img src="style/image/log-in/JAMBES_3-gauche.svg" id="image-gauche">
@@ -23,9 +23,9 @@
                         </div>
                     </div>
                     <div class="login-links">
-                        <a href=".?/action=action" class="button">Login</a>
-                        <a href="#"> <strong> Forgot password ?</strong></a>
-                        <a href="./?action=register"> <strong>Sign-Up</strong></a>
+                        <button href="./?action=connexion" class="button">Login</button>
+                        <button href="#"> <strong> Forgot password ?</strong></button>
+                        <button href="./?action=register"> <strong>Sign-Up</strong></button>
                     </div>
                 </form>
             </div>

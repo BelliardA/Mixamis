@@ -53,17 +53,17 @@
     <?php
         if(isset($groups)){
             foreach ($groups as $group): 
-            if(isLoggedOn()){
-                ?>
-                <a href="./?action=group&idGroup=<?= $group['id']; ?>">
-            <?php
-            }
-            else{
-                ?>
-                <a href="./?action=connexion">
+                if(isLoggedOn()){
+                    ?>
+                    <a href="./?action=group&idGroup=<?= $group['id']; ?>">
                 <?php
-            }
-            ?>
+                }
+                else{
+                    ?>
+                    <a href="./?action=connexion">
+                    <?php
+                }
+                ?>
                 <div class="card">
                         <h4><?= $group['name']; ?></h4>
                         <p><?= $group['description']; ?></p>

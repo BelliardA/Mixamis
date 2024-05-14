@@ -3,7 +3,10 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/aPropos.css">
     <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/footer.css">
 </head>
+
+<body>
 
 <!-- suite du code sans utilisé de body ou html -->
 <div class="nav-bar">
@@ -13,14 +16,14 @@
         if(isLoggedOn()){
             ?>
             <a href="./?action=search">
-                <span>Chercher un group</span>
+                <span>Chercher un groupe</span>
             </a>
             <?php
         }
         else{
             ?>
             <a href="./?action=connexion">
-                <span>Chercher un group</span>
+                <span>Chercher un groupe</span>
             </a>
             <?php
         }
