@@ -140,11 +140,11 @@ p, label{
    display: flex;
    height: 700px;
    background-image: url(image/accueil/NIGHT_LIFE.svg);
-   background-size: 35%;
+   background-size: 45%;
    background-repeat: no-repeat;
-   background-position-y: 0%;
-   z-index: 1;
    margin-top: -42vh;
+   margin-left: -10vw;
+   margin-bottom: -Zvh;
    justify-content: start;
    align-items: center;
 }
