@@ -2,6 +2,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/aPropos.css">
+    <link rel="stylesheet" href="style/menu.css">
 </head>
 
 <!-- suite du code sans utilisé de body ou html -->
