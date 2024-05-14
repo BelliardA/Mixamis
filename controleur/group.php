@@ -5,6 +5,8 @@ if ( $_SERVER["SCRIPT_FILENAME"] == __FILE__ ){
 
 include_once "$racine/model/bd.groups.inc.php";
 include_once "$racine/model/bd.activities.php";
+include_once "$racine/model/bd.groups_user.php";
+include_once "$racine/model/bd.users.inc.php";
 include_once "$racine/model/bd.authentification.inc.php";
 
 // Démarrer la session
@@ -39,6 +41,7 @@ if ($result && $result["is_orga"] == 1) {
     $isOrga = 0;
 }
 
+$userInGroup = getuserInGroup($id_group);
 
 include "$racine/vue/vueHeader.php";
 include "$racine/vue/vueGroup.php";
