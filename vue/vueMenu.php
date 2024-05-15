@@ -4,7 +4,7 @@
             <h1>PASSE À L'ACTION ! </h1>
             <p>Activités variées pour tous les étudiants genevois ! Inscris-toi vite et ne passe pas à côté !</p>
         </div>
-        <a href="./?action=connexion" class="bouton">Inscris-toi</a>
+        <a href="./?action=connexion" class="bouton-menu boutton">Inscris-toi</a>
     </section>
     <div class="jambe-gauche">
         <img src="style/image/accueil/JAMBES_gauche.svg">
