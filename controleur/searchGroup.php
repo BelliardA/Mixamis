@@ -8,6 +8,8 @@ include_once "$racine/model/bd.authentification.inc.php";
 session_start();
 requiredConnexion();
 
+$bodyClass = "body-search";
+
 include "$racine/vue/vueHeader.php";
 include "$racine/vue/vueJoinGroup.php";
 include "$racine/vue/vueFooter.php";

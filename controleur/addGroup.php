@@ -12,6 +12,8 @@ include_once "$racine/model/bd.authentification.inc.php";
 session_start();
 requiredConnexion();
 
+$bodyClass = "body-create";
+
 $activities = getActivities();
 
 if (isset($_POST["name"]) && isset($_POST["id_activity"])){

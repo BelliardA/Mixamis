@@ -62,19 +62,40 @@ a{
 .full-body {
     min-height: 100vh;
     background-color: #fff;
-    background-image: url(imag.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-size: 100% auto;
 }
 
+.body-default{
+    background-image: url(image/accueil/fond-headers.svg);
+}
+
+.body-profil{
+    background-image: url('image/profile/FOND_PROFIL.svg');
+}
+.body-search{
+    background-image: url('image/joinGroup/CULURELLES.svg');
+}
+.body-create{
+    background-image: url(image/accueil/forme-nocturne.svg);
+    background-size: 80%;
+
+}
 .card{
     background: #fff none no-repeat center bottom;
     background-size: 100% auto;
     display: block;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 10px;
     border: 2px solid black;
+    box-shadow: -10px 10px 0 black;
+    transition: 0.3s;
+}
+
+a.card:hover{
+    transform: translateX(-10px) translateY(10px);
+    box-shadow: 0 0 0 black;
 }
 
 .section-card{
@@ -124,6 +145,7 @@ section.default-form{
 .default-form form{
     border: 2px solid black;
     border-radius: 20px;
+    background-color: #fff;
     padding: 20px;
     margin: 20px 0;
 }
@@ -136,7 +158,10 @@ section.default-form{
 .default-form form input{
     display: block;
     box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 8px;
     margin-bottom: 1em;
+    height: 38px;
     width: 100%;
 }
 

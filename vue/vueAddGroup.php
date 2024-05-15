@@ -9,7 +9,7 @@
 
         <div class="information">
             <label for="name">Nom du groupe *:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="ex : Sorti Bar, " required>
         </div>
         <div>
                 <label for="isPublic">Type de Groupe :</label>
@@ -22,7 +22,7 @@
         </div>
         <div>
             <label for="description">description :</label>
-            <input type="text" id="description" name="description">
+            <input type="text" id="description" name="description" placeholder="Description">
         </div>
         <div>
             <label for="id_activity">Activité :</label>

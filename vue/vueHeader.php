@@ -8,7 +8,7 @@
 
 
 <body>
-<div class="full-body <?=$bodyClass?? "" ?>">
+<div class="full-body <?=$bodyClass?? "body-default" ?>">
 
 
 <!-- suite du code sans utilisé de body ou html -->

@@ -18,7 +18,7 @@
                     Formation : _______________________<br>
                     Niveau : _________________________
                 </p>
-                <a href="./?action=deconnexion">Déconnexion</a>
+                <a href="./?action=deconnexion" class="bouton">Déconnexion</a>
             </div>
             <!-- <div class="avatar-option-div-btn">
                 <div class="avatar-opt-div">
