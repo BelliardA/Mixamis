@@ -19,7 +19,7 @@ else
 include "$racine/vue/vueHeader.php";
 if (isLoggedOn()){
     $message = "Connexion réussie";
-    include "$racine/vue/vueValidConnexion.php";
+    header("Location: ./?action=profil");
 }
 else{
     $message = "Connexion échouée";

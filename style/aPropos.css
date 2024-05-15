@@ -20,9 +20,7 @@ h2 {
 }
 a{
     text-decoration: none;
-    width: fit-content;
     cursor: pointer;
-    border-radius: 8px;
 }
 
 p, label{

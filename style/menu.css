@@ -31,17 +31,12 @@ p, label{
 }
 
 .main-menu{
-    display: flex;
-    flex-direction: column;
 }
 
 /* premiere partis */
 .section-titre{
-    display: flex;
-    flex-direction: column;
     gap: 30px;
     margin-top: 140px;
-    margin-left: 30px;
 }
 
 .text{
@@ -50,6 +45,7 @@ p, label{
 }
 
 .bouton {
+    display: inline-block;
     --bg: transparent;
     --hover-bg: var(--bg);
     --hover-text: black;
@@ -62,8 +58,8 @@ p, label{
     cursor: pointer;
     text-decoration: none;
     color: black;
-    width: 114px;
     text-align: center;
+    margin-top: 1em;
 }
 
 .bouton:hover{
@@ -95,16 +91,6 @@ p, label{
     padding:30px 15vw 0 15vw;
     height: 150vh;
     overflow: hidden;
-}
-
-.card{
-    height: 50%;
-    width: 70%;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: -0.25rem 0.25rem black;
-    padding: 10px;
 }
 
 .section-triangle{

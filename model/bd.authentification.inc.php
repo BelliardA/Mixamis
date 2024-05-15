@@ -28,6 +28,13 @@ function isLoggedOn() {
     return isset($_SESSION["mail"]);
 }
 
+function requiredConnexion() {
+    if (!isLoggedOn()) {
+        header("Location: ./?action=connexion");
+        exit();
+    }
+}
+
 function logout() {
     if (!isset($_SESSION)) {
         session_start();

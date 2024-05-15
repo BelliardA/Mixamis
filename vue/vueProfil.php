@@ -18,9 +18,9 @@
                     Formation : _______________________<br>
                     Niveau : _________________________
                 </p>
-                <a href="#">Choisir une couleur</a>
+                <a href="./?action=deconnexion">Déconnexion</a>
             </div>
-            <div class="avatar-option-div-btn">
+            <!-- <div class="avatar-option-div-btn">
                 <div class="avatar-opt-div">
                     <img src="style/image/profile/avatar-opt/Group 54.svg">
                     <img src="style/image/profile/avatar-opt/Group 55.svg">
@@ -36,8 +36,8 @@
                     <img src="style/image/profile/avatar-opt/Group 65.svg">
                 </div>
                 <a href="#" class="btn-valider">Valider</a>
-            </div>
+            </div> -->
 
         </div>
 </div>
-<script src="style/profil.js"></script>
+<!-- <script src="style/profil.js"></script> -->

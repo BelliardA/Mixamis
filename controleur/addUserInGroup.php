@@ -6,7 +6,7 @@ if ( $_SERVER["SCRIPT_FILENAME"] == __FILE__ ){
 include_once "$racine/model/bd.groups_user.php";
 include_once "$racine/model/bd.authentification.inc.php";
 
-session_start();    
+session_start(); 
 
 $mail = $_SESSION["mail"];
 $id_group = $_GET["idGroup"];

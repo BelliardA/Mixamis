@@ -10,6 +10,7 @@ include_once "$racine/model/bd.authentification.inc.php";
 
 // Démarrer la session
 session_start();
+requiredConnexion();
 
 $activities = getActivities();
 
