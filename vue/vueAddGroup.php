@@ -9,14 +9,14 @@
 
         <div class="information">
             <label for="name">Nom du groupe *:</label>
-            <input type="text" id="name" name="name" placeholder="ex : Sorti Bar, " required>
+            <input type="text" id="name" name="name" placeholder="ex : Sorti Bar, Foot, Tour de bateau" required>
         </div>
         <div>
                 <label for="isPublic">Type de Groupe :</label>
                 <div>
-                    <label for="isPublic">Privé</label>
+                    <label for="isPublic" class="PP">Privé</label>
                     <input type="radio" id="private" name="isPublic" value="0">
-                    <label for="isPublic">Public</label>
+                    <label for="isPublic" class="PP">Public</label>
                     <input type="radio" id="public" name="isPublic" value="1">
                 </div>
         </div>
@@ -41,7 +41,7 @@
             </select>
         </div>
         <div>
-            <button type="submit">Créer un groupe</button>
+            <button class="bouton btn-form" type="submit">Créer un groupe</button>
         </div>
     </form>
 </section>

@@ -149,11 +149,19 @@ section.default-form{
     padding: 20px;
     margin: 20px 0;
 }
+.pp{
+    text-transform: lowercase;
+}
 
 .default-form form label{
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.btn-form{
+    margin-left: 45%;
+}
+
 
 .default-form form input{
     display: block;

@@ -16,6 +16,7 @@ if (isset($_POST["mail"]) && isset($_POST["password"] )&& isset($_POST["name"]) 
         // $code = genererCodeAleatoire();
         // $reponse = sendMail($mail, $code);
         // echo $reponse;
+        header("Location: ./?action=profil");
     }else{
         $message = "Vous devez avoir une adresse mail d'une université suisse pour vous inscrire";
     }
