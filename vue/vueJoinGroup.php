@@ -1,20 +1,13 @@
-<head>
-    <link rel="stylesheet" href="style/joingroup.css">
-</head>
-
 <div class="div-body">
     <img src="style/image/joinGroup/JAMBES_gauche.svg" id="image-gauche">
     <div class="titre-recherche">
         <h1>Rejoindre</h1>
         <div class="recherche-lien">
-            <form action="./?action=defaut" id="lien">
-                <label for="name"> <strong>Code partagé*</strong></label>
-                <input type="text" name="search" placeholder="Code partagé">
-                <input type="submit" value="Rechercher" id="rechercherBtns">
+            <form action="./?action=defaut" class="lien">
+                <label for="search"> <strong>Code partagé*</strong></label>
+                <input type="text" class="input-search" name="search" placeholder="Code partagé">
             </form>
-            <a href="./?action=defaut" class="rejoindreBtn">
-                Rejoindre le groupe
-            </a>
+            <button type="submit" class="bouton">Chercher</button>
         </div>
     </div>
     <img src="style/image/joinGroup/JAMBES_droite.svg" id="image-droite">
