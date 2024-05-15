@@ -1,5 +1,5 @@
-<main class="main-menu">
-    <section class="section-titre">
+<main class="main-menu ">
+    <section class="section-titre container">
         <div class="text">
             <h1>PASSE À L'ACTION ! </h1>
             <p>Activités variées pour tous les étudiants genevois ! Inscris-toi vite et ne passe pas à côté !</p>
@@ -9,68 +9,34 @@
     <div class="jambe-gauche">
         <img src="style/image/accueil/JAMBES_gauche.svg">
     </div>
-    <section class="section-bulle">
-        <h2>LOISIR & <br> DIVERTISSEMENT</h2>
-    </section>
-    <section class="card-bulle">
-        <?php
-        if(isset($groups)){
-            foreach ($groups as $group): ?>
-            <a href="./?action=group&idGroup=<?= $group['id']; ?>">
-                <div class="card">
-                        <h4><?= $group['name']; ?></h4>
+
+<?php 
+foreach ($categories as $category){
+    ?>
+
+    <section class="section-<?= $category['class']; ?> section-title">
+        <div class="container">
+
+            <h2><?= $category['name']; ?></h2>
+
+            <div class="section-card">
+            <?php
+                    foreach ($groupsByCategory[$category['id']] as $group): ?>
+                    <a class="card" href="./?action=group&idGroup=<?= $group['id']; ?>">
+                        <h3><?= $group['name']; ?></h3>
                         <p><?= $group['description']; ?></p>
-                    </div>
-                </a>
-            <?php endforeach; 
-        }
-        ?>
+                    </a>
+                <?php endforeach; 
+            ?>
+            </div>
+
+        </div>
+
     </section>
-    <section class="section-triangle">
-        <h2>
-            <span>Art &</span>
-            <span>Culture</span>
-        </h2>
-    </section>
-    <section class="card-triangle">
-        <?php
-        if(isset($groups)){
-            foreach ($groups as $group): ?>
-            <a href="./?action=group&idGroup=<?= $group['id']; ?>">
-                <div class="card">
-                        <h4><?= $group['name']; ?></h4>
-                        <p><?= $group['description']; ?></p>
-                    </div>
-                </a>
-            <?php endforeach; 
-        }
-        ?>
-    </section>
-    <section class="section-etoile">
-        <h2>Night Life</h2>
-    </section>
-    <section class="card-etoile">
+
+
+
     <?php
-        if(isset($groups)){
-            foreach ($groups as $group): 
-                if(isLoggedOn()){
-                    ?>
-                    <a href="./?action=group&idGroup=<?= $group['id']; ?>">
-                <?php
-                }
-                else{
-                    ?>
-                    <a href="./?action=connexion">
-                    <?php
-                }
-                ?>
-                <div class="card">
-                        <h4><?= $group['name']; ?></h4>
-                        <p><?= $group['description']; ?></p>
-                    </div>
-                </a>
-            <?php endforeach; 
-        }
-        ?>
-    </section>
+} ?>
+
 </main>

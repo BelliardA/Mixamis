@@ -8,8 +8,8 @@
         <h1>Rejoindre</h1>
         <div class="recherche-lien">
             <form action="./?action=defaut" id="lien">
-                <label for="name"> <strong>Lien partagé*</strong></label>
-                <input type="text" name="search" placeholder="Lien partagé">
+                <label for="name"> <strong>Code partagé*</strong></label>
+                <input type="text" name="search" placeholder="Code partagé">
                 <input type="submit" value="Rechercher" id="rechercherBtns">
             </form>
             <a href="./?action=defaut" class="rejoindreBtn">

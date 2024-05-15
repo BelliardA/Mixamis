@@ -1,4 +1,4 @@
-</body>
+</div>
 <footer>
     <a href="./?action=defaut"> <img src="style/image/accueil/logo.svg" class="logo" alt="logo"></a>
     <a class="bouton" href="./?action=addGroup">Créer un groupe</a>
@@ -9,3 +9,5 @@
         <img src="style/image/footer/Group 2.svg">
     </div>
 </footer>
+</body>
+</html>

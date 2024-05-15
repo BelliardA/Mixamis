@@ -20,9 +20,7 @@ h2 {
 }
 a{
     text-decoration: none;
-    width: fit-content;
     cursor: pointer;
-    border-radius: 8px;
 }
 
 p, label{
@@ -82,6 +80,9 @@ line-height: normal;
     margin: 275px 102px 92px 535px;
     font-weight: 600;
     font-size: 16px;
+    background-image: url(image/accueil/forme-nocturne.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .jambe-gauche img{
     width: 72.5vw;

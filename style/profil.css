@@ -7,7 +7,6 @@
 .body{
     width: 100%;
     box-sizing: border-box;
-    background-image: url('image/profile/FOND_PROFIL.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -50,23 +49,6 @@ p{
     flex-direction: column;
     width: 40%;
     line-height: 40px;
-}
-.avatar-opt-btn a{
-    background: rgb(253, 253, 253);
-    border: 2px solid black;
-    border-radius: 10px;
-    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
-    height: 40px;
-    width: 150px;
-    margin-top: 20px;
-    box-shadow: -0.25rem 0.25rem black;
-    text-decoration: none;
-    color: black;
-    padding:0 35px;
-    align-items: center;
-}
-.avatar-opt-btn a:hover{
-    background-color: #3A6EA5;
 }
 .avatar-option-div-btn{
     display: none;

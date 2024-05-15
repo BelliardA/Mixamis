@@ -1,7 +1,7 @@
 <head>
     <link rel="stylesheet" href="style/addGroup.css">
 </head>
-<section>
+<section class="default-form">
     <div class="titre">
         <h2>Créer un groupe</h2>
     </div>
@@ -9,7 +9,7 @@
 
         <div class="information">
             <label for="name">Nom du groupe *:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="ex : Sorti Bar, " required>
         </div>
         <div>
                 <label for="isPublic">Type de Groupe :</label>
@@ -19,11 +19,10 @@
                     <label for="isPublic">Public</label>
                     <input type="radio" id="public" name="isPublic" value="1">
                 </div>
-            </div>
         </div>
         <div>
             <label for="description">description :</label>
-            <input type="text" id="description" name="description">
+            <input type="text" id="description" name="description" placeholder="Description">
         </div>
         <div>
             <label for="id_activity">Activité :</label>

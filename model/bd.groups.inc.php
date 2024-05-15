@@ -23,7 +23,7 @@ function getGroups() {
 function getGroupPublic(){
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from groupes where is_public=1");
+        $req = $cnx->prepare("select g.*, a.id_category from groupes g JOIN activities a ON a.id = g.id_activity where is_public=1");
         $req->execute();
 
         $ligne = $req->fetch(PDO::FETCH_ASSOC);
