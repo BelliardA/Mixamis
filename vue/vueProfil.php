@@ -1,6 +1,3 @@
-<head>
-    <link rel="stylesheet" href="style/menu.css">
-</head>
 <div class="profil-body">
         <div class="profile-div">
             <div class="profil-avatar">
@@ -10,13 +7,9 @@
                 
             </div>
             <div class="avatar-opt-btn">
-                <p class="profil-p">Nom : __________________________ <br>
-                    Prénom : ________________________<br>
-                    âge :  __________________________<br>
-                    école : __________________________<br>
-                    Lieu : ___________________________<br>
-                    Formation : _______________________<br>
-                    Niveau : _________________________
+                <p class="profil-p">Nom : <?= $user['name']?><br>
+                    Prénom : <?= $user['first_name']?><br>
+                    école : <?= $user['school']?><br>
                 </p>
                 <a href="./?action=deconnexion" class="bouton">Déconnexion</a>
             </div>

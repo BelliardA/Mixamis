@@ -5,6 +5,8 @@ if ( $_SERVER["SCRIPT_FILENAME"] == __FILE__ ){
 
 include_once "$racine/model/bd.authentification.inc.php";
 
+$bodyClass = "body-register";
+
 if (isset($_POST["mail"]) && isset($_POST["password"] )&& isset($_POST["name"]) && isset($_POST["firstname"]) && isset($_POST["school"])){
     $mail=$_POST["mail"];
     $password=$_POST["password"];

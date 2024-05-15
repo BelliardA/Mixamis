@@ -43,6 +43,7 @@ if ($result && $result["is_orga"] == 1) {
 }
 
 $userInGroup = getuserInGroup($id_group);
+$nbParticipants= count($userInGroup);
 
 $bodyClass = "body-". $category["class"];
 include "$racine/vue/vueHeader.php";

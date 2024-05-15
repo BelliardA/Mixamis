@@ -66,3 +66,23 @@ function generateULID() {
 
     return $ulid;
 }
+
+function dateFormat($date) {
+    $date = new DateTime($date);
+        $formattedDate = $date->format('d F \à H\hi');
+    $months = [
+        'January' => 'janvier',
+        'February' => 'février',
+        'March' => 'mars',
+        'April' => 'avril',
+        'May' => 'mai',
+        'June' => 'juin',
+        'July' => 'juillet',
+        'August' => 'août',
+        'September' => 'septembre',
+        'October' => 'octobre',
+        'November' => 'novembre',
+        'December' => 'décembre'
+    ];
+    return strtr($formattedDate, $months);
+}
