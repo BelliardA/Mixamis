@@ -1,7 +1,6 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/aPropos.css">
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/footer.css">
 </head>
