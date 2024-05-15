@@ -1,11 +1,12 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
-    <link rel="stylesheet" href="style/connexion.css">
+    <link rel="stylesheet" href="style/menu.css">
     <title>Connexion</title>
 </head>
 
-<section>
-    <div class="div-body">
+
+<section class="section">
+    <div class="log-in-div-body">
         <img src="style/image/log-in/JAMBES_3-gauche.svg" id="image-gauche">
         <div class="login">
             <h1>LOGIN</h1>
@@ -27,7 +28,6 @@
                         <a href="./?action=register"> <strong>Sign-Up</strong></a>
                     </div>
                 </form>
-                
             </div>
         </div>
         <img src="style/image/log-in/JAMBES_3-droite.svg" id="image-droite">

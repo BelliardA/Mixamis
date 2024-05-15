@@ -1,21 +1,21 @@
 <head>
-    <link rel="stylesheet" href="style/aPropos.css">
+    <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<main>
-    <section class="introduction">
+<main class="apropos-main">
+    <section class="aPropos-introduction">
             <h1>PASSE À L’ACTION !</h1>
             <div>
                 <p>Activités variées pour tous les étudiants genevois ! Inscris-toi vite et ne passe pas à côté !</p>
                 <p>Ta carte étudiante est ton passe-partout ! </p>
             </div>
-            <a href="./?action=connexion" class="bouton">Inscris-toi</a>
+            <a href="./?action=connexion" class="aPropos-bouton">Inscris-toi</a>
     </section>
-    <div class="jambe-droite">
+    <div class="aPropos-jambe-droite">
             <img src="style/image/a-propos/JAMBES_droite.svg">
     </div>
-    <section class="explication">
+    <section class="aPropos-explication">
         <p>
             Plonge-toi dans une aventure extrascolaire, sociale et unique à Genève ! <br><br>
             Tu es étudiant.e et tu souhaites tisser davantage de liens durant tes années d’études<br> supérieures ?<br><br>
@@ -36,7 +36,7 @@
             quel.le étudiant.e pour créer des souvenirs en-dehors du cadre scolaire !
         </p>
     </section>
-    <div class="jambe-gauche">
+    <div class="aPropos-jambe-gauche">
             <img src="style/image/a-propos/JAMBES_gauche.svg">
     </div>
     
@@ -59,7 +59,6 @@
                             <label for="mail">Email :</label>
                             <input type="email" id="mail" name="mail" placeholder="nom@eduge.ch" required>
                         </div>
-                        
                         <div>
                             <label for="sujet">Sujet :</label>
                             <input type="text" id="sujet" name="sujet" placeholder="..." required>
@@ -69,8 +68,7 @@
                             <label for="message">Message :</label>
                             <textarea id="message" name="message" placeholder="Commentaire"required></textarea>
                         </div>
-                        
-                        <input class="bouton" type="submit" value="Envoyer">
+                        <input class="button" type="submit" value="Envoyer">
                     </form>
                 </div>
                 <div class="liens-utiles">
