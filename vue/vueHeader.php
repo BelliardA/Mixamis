@@ -3,28 +3,21 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/aPropos.css">
     <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/footer.css">
 </head>
 
+
+<body>
+<div class="full-body <?=$bodyClass?? "body-default" ?>">
+
+
 <!-- suite du code sans utilisé de body ou html -->
-<div class="nav-bar">
+<div class="nav-bar container">
     <a href="./?action=defaut"> <img src="style/image/accueil/logo.svg" class="logo" alt="logo"></a>
     <div class="buttons-div">
-        <?php
-        if(isLoggedOn()){
-            ?>
-            <a href="./?action=search">
-                <span>Chercher un groupe</span>
-            </a>
-            <?php
-        }
-        else{
-            ?>
-            <a href="./?action=connexion">
-                <span>Chercher un groupe</span>
-            </a>
-            <?php
-        }
-        ?>
+        <a href="./?action=search">
+            <span>Chercher un groupe</span>
+        </a>
         <a href="./?action=addGroup">
             <span>Créer un groupe</span>
         </a>

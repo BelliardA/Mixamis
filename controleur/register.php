@@ -38,6 +38,7 @@ if (isLoggedOn()){
 else{
     include "$racine/vue/vueInscription.php";
 }
+include "$racine/vue/vueFooter.php";
 
 
 function isEtu($mail){

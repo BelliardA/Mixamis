@@ -65,17 +65,12 @@ label{     /*--------------signup----------------------*/
 }
 /*-----------------------------menu-css----------------------*/
 .main-menu{
-    display: flex;
-    flex-direction: column;
 }
 
 /* premiere partis */
 .section-titre{
-    display: flex;
-    flex-direction: column;
     gap: 30px;
     margin-top: 140px;
-    margin-left: 30px;
 }
 
 .text{
@@ -83,8 +78,22 @@ label{     /*--------------signup----------------------*/
     flex-direction: column;
 }
 
-.bouton-menu {
+.bouton {
+    display: inline-block;
+    --bg: transparent;
+    --hover-bg: var(--bg);
+    --hover-text: black;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
     padding: 10px 35px 10px 35px;
+    box-shadow: -0.25rem 0.25rem black;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 1em;
 }
 
 .bouton:hover{
@@ -116,16 +125,6 @@ label{     /*--------------signup----------------------*/
     padding:30px 15vw 0 15vw;
     height: 150vh;
     overflow: hidden;
-}
-
-.card{
-    height: 50%;
-    width: 70%;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: -0.25rem 0.25rem black;
-    padding: 10px;
 }
 
 .section-triangle{
@@ -282,7 +281,7 @@ label{     /*--------------signup----------------------*/
     background-image: url('image/a-propos/FOND_FORME_A_PROPOS.svg');
     background-repeat: no-repeat;
     background-size: 100%;
-} 
+}
 .aPropos-introduction {
     padding-left: 98px;
     padding: 200px 100px 100px;
@@ -687,7 +686,7 @@ label{     /*--------------signup----------------------*/
     position: relative;
     transition: all 0.2s ease-in-out;
   }
-  
+
   .checkbox::before {
     font-family: "Quicksand", sans-serif;
     position: absolute;
@@ -698,38 +697,38 @@ label{     /*--------------signup----------------------*/
     transform: scale(0);
     transition: all 0.2s ease-in-out;
   }
-  
+
   .checkbox:checked::before {
     animation: zoom 0.5s ease-in-out;
     transform: scale(1);
     content: "✔";
   }
-  
+
   @keyframes zoom {
     0% {
       transform: scale(0);
     }
-  
+
     20% {
       transform: scale(1.5);
     }
-  
+
     40% {
       transform: scale(0.5);
     }
-  
+
     50% {
       transform: scale(1);
     }
-  
+
     70% {
       transform: scale(1.2);
     }
-  
+
     90% {
       transform: scale(0.8);
     }
-  
+
     100% {
       transform: scale(1);
     }

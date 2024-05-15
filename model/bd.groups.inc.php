@@ -23,7 +23,7 @@ function getGroups() {
 function getGroupPublic(){
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from groupes where is_public=1");
+        $req = $cnx->prepare("select g.*, a.id_category from groupes g JOIN activities a ON a.id = g.id_activity where is_public=1");
         $req->execute();
 
         $ligne = $req->fetch(PDO::FETCH_ASSOC);
@@ -57,7 +57,7 @@ function getGroupsById($id) {
 function isOrgaByMail($mail, $idGroup){
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from groups_user where mail=:mail and id_group=:idGroup");
+        $req = $cnx->prepare("select is_orga from groups_user where mail=:mail and id_group=:idGroup");
         $req->bindValue(':mail', $mail, PDO::PARAM_STR);
         $req->bindValue(':idGroup', $idGroup, PDO::PARAM_STR);
         $req->execute();
@@ -78,7 +78,7 @@ function addGroups($ulid, $name, $is_public ,$description, $activity_id) {
         $req = $cnx->prepare("INSERT INTO `groupes` (id, name, is_public, description, id_activity) VALUES (:id, :name, :is_public, :description, :id_activity)");
         $req->bindValue(':id', $ulid, PDO::PARAM_STR);
         $req->bindValue(':name', $name, PDO::PARAM_STR);
-        $req->bindValue(':is_public', $is_public, PDO::PARAM_BOOL);
+        $req->bindValue(':is_public', $is_public, PDO::PARAM_INT);
         $req->bindValue(':description', $description, PDO::PARAM_STR);
         $req->bindValue(':id_activity', $activity_id, PDO::PARAM_INT);
         

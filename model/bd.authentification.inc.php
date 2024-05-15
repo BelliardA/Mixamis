@@ -8,13 +8,17 @@ function login($mail, $mdp) {
     }
 
     $util = getUsersByMail($mail);
-    $mdpBD = $util["password"];
-    
-    if (password_verify($mdp, $mdpBD)) {
-        // le mot de passe est celui de l'utilisateur dans la base de donnees
-        $_SESSION["mail"] = $mail;
-        $_SESSION["mdp"] = $mdpBD;
+    if ($util) {
+        $mdpBD = $util["password"];
+        
+        if (password_verify($mdp, $mdpBD)) {
+            // Le mot de passe est correct
+            $_SESSION["mail"] = $mail;
+            echo $_SESSION["mail"];
+            return true;
+        }
     }
+    return false;
 }
 
 function isLoggedOn() {
@@ -22,6 +26,13 @@ function isLoggedOn() {
         session_start();
     }
     return isset($_SESSION["mail"]);
+}
+
+function requiredConnexion() {
+    if (!isLoggedOn()) {
+        header("Location: ./?action=connexion");
+        exit();
+    }
 }
 
 function logout() {

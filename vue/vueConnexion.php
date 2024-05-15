@@ -15,17 +15,17 @@
                     <div class="login-information">
                         <div id="email">
                             <label for="mail"> <strong>Email </strong></label>
-                            <input type="email" name="mail" placeholder="Email Scolaire" /><br />
+                            <input type="email" name="mail" id="mail" placeholder="Email Scolaire" /><br />
                         </div>
                         <div id="password">
                             <label for="password"><strong>password </strong></label>
-                            <input type="password" name="password" placeholder="Mot de passe"  /><br />
+                            <input type="password" name="password" id="password" placeholder="Mot de passe"  /><br />
                         </div>
                     </div>
                     <div class="login-links">
-                        <a href=".?/action=action" class="button loginBtn">Login</a>
-                        <a href="#" class="login-a"> <strong> Forgot password ?</strong></a>
-                        <a href="./?action=register" class="login-a"> <strong>Sign-Up</strong></a>
+                        <button class="button">Login</button>
+                        <!-- <button href="#"> <strong> Forgot password ?</strong></button> -->
+                        <a href="./?action=register"> <strong>Sign-Up</strong></a>
                     </div>
                 </form>
             </div>

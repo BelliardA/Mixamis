@@ -7,5 +7,4 @@ include_once "$racine/model/bd.authentification.inc.php";
 
 logout();
 
-include "$racine/vue/vueHeader.php";
-include "$racine/vue/vueMenu.php";
+header("Location: ./");

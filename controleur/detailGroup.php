@@ -6,6 +6,9 @@ if ( $_SERVER["SCRIPT_FILENAME"] == __FILE__ ){
 include_once "$racine/model/bd.activities.php";
 include_once "$racine/model/bd.authentification.inc.php";
 
+session_start();
+requiredConnexion();
+
 $timeActivities = getTimeActivitiesById($_GET["idActivity"]);
 
 if(isset($_POST["time"])){
@@ -19,3 +22,4 @@ if(isset($_POST["time"])){
 
 include "$racine/vue/vueHeader.php";
 include_once "$racine/vue/vueDetailsGroup.php";
+include "$racine/vue/vueFooter.php";
