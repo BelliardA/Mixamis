@@ -1,16 +1,16 @@
 <head>
-    <link rel="stylesheet" href="style/profil.css">
+    <link rel="stylesheet" href="style/menu.css">
 </head>
-<div class="body">
+<div class="profil-body">
         <div class="profile-div">
-            <div class="avatar">
+            <div class="profil-avatar">
                 <div>
                     <img src="style/image/profile/Group 69.svg">
                 </div>
                 
             </div>
             <div class="avatar-opt-btn">
-                <p>Nom : __________________________ <br>
+                <p class="profil-p">Nom : __________________________ <br>
                     Prénom : ________________________<br>
                     âge :  __________________________<br>
                     école : __________________________<br>

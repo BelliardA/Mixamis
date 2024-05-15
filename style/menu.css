@@ -1,35 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+*{
+    font-family: "Poppins", sans-serif;
+}
 
-h1, h2, h3{
-    color: #000;
-    font-family: "Gasoek One";
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 0px;
-}
-h1{
+h1 {
+    font-family: "Gasoek One", sans-serif;
     font-size: 72px;
+    font-weight: 400;
 }
-h2{
+h2 {
     font-size: 64px;
+    font-weight: 900;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
 }
 p{
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-}
-p, label{
     color: #000;
-    font-family: Poppins;
+    /* H3 */
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
+label{     /*--------------signup----------------------*/
+    padding: 5px 0;
+    width: 30%;
+}
+#email{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    --bg: transparent;
+    --hover-bg: var(--bg);
+    --hover-text: black;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+    box-shadow: -0.25rem 0.25rem black;
+    height: 38px;
+    width: 6vw;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button:hover{
+    transform: translateX(-0.25rem) translateY(0.25rem);
+    box-shadow: 0rem 0rem black;
+}
 
+#email label{
+    text-align: right;
+    padding-right:0 20px 0 35px;
+}
+/*-----------------------------menu-css----------------------*/
 .main-menu{
     display: flex;
     flex-direction: column;
@@ -49,21 +83,8 @@ p, label{
     flex-direction: column;
 }
 
-.bouton {
-    --bg: transparent;
-    --hover-bg: var(--bg);
-    --hover-text: black;
-    background: transparent;
-    border: 2px solid black;
-    border-radius: 10px;
-    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+.bouton-menu {
     padding: 10px 35px 10px 35px;
-    box-shadow: -0.25rem 0.25rem black;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    width: 114px;
-    text-align: center;
 }
 
 .bouton:hover{
@@ -157,4 +178,578 @@ p, label{
     padding:30px 15vw 0 15vw;
     height: 100vh;
     overflow: hidden;
+}
+
+/*------------------------------------------css profil------------------------------------*/
+.profil-body{
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url('image/profile/FOND_PROFIL.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    height: 950px;
+}
+
+.profile-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 70px 80px;
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 504px;
+    width: 56.25vw;
+    gap: 100px;
+    box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+}
+.profil-avatar{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 400px;
+    height: 520px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profil-p{
+    line-height: 42px;
+}
+.avatar-opt-btn{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    line-height: 40px;
+}
+.avatar-opt-btn a{
+    background: rgb(253, 253, 253);
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+    box-shadow: -0.25rem 0.25rem black;
+    text-decoration: none;
+    color: black;
+    padding:0 35px;
+    align-items: center;
+}
+.avatar-opt-btn a:hover{
+    background-color: #3A6EA5;
+}
+.avatar-option-div-btn{
+    display: none;
+}
+.avatar-opt-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 56px;
+    margin-bottom: 50px;
+    width: 25.7vw;
+}
+.avatar-opt-div img:hover{
+    cursor: pointer;
+}
+.btn-valider{
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+    width: fit-content;
+    box-shadow: -0.25rem 0.25rem black;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 34px;
+    display: flex;
+    align-items: center;
+}
+.btn-valider:hover{
+    background-color: rgba(0, 128, 0, 0.616);
+}
+
+/*----------------------------------------aProppos.css-------------------------------*/
+.apropos-main {
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url('image/a-propos/FOND_FORME_A_PROPOS.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+.aPropos-introduction {
+    padding-left: 98px;
+    padding: 200px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+.aPropos-jambe-droite{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 300px;
+}
+
+.aPropos-bouton {
+    --bg: white;
+    --hover-bg: var(--bg);
+    --hover-text: black;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+    padding: 10px 35px 10px 35px;
+    box-shadow: -0.25rem 0.25rem black;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    width: 114px;
+    text-align: center;
+}
+.aPropos-bouton:hover{
+    transform: translateX(-0.25rem) translateY(0.25rem);
+    box-shadow: 0rem 0rem black;
+}
+
+.aPropos-explication{
+    margin: 76px 863px 0 100px;
+}
+.plot-twist{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin: 275px 102px 92px 535px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.aPropos-jambe-gauche img{
+    width: 72.5vw;
+    height: 248px;
+    margin-bottom: 289px;
+}
+.contact {
+    display: flex;
+    align-items: center  ;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 100px;
+}
+
+.nous-contacter {
+    display: flex;
+    gap: 10%;
+    padding: 199px ;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    width: 30vw;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: -0.5rem 0.5rem black;
+    padding: 20px 40px 70px 20px;
+}
+.formulaire form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulaire form div {
+    display: flex;
+    gap: 5%;
+}
+
+.formulaire input, .formulaire textarea{
+    border-radius: 8px;
+    border: 3px solid var(--Black, #000);
+    background: var(--White, #FFF);
+    width: 20vw;
+}
+.formulaire label{
+    text-align: right;
+}
+.formulaire textarea{
+    width: 19.8vw;
+    height: 30vh;
+}
+.formulaire .button{
+    width: 16.7vw;
+}
+.liens-utiles{
+    width: 20vw;
+    height: 30%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: -0.5rem 0.5rem black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mail, .telephone{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.mail a , .telephone a{
+    padding: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+/*-------------------------------login/connexion-css---------------------------------------*/
+.section{
+    width: 100vw;
+    height: 80.5vh;
+    background-image: url('image/log-in/NIGHT_LIFE.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+}
+.log-in-div-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.login-form{
+    border-radius: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    padding: 15px;
+    width: 33vw;
+    height: 288px;
+    box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+.login-information{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    width: 26vw;
+}
+.login-form label{
+    padding: 5px 0;
+}
+
+.login-form input{
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 20vw;
+    font-size: 15px;
+}
+
+#password{
+    display: flex;
+    justify-content: space-between;
+}
+.login-links{
+    display: flex;
+    width: fit-content;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-left: 100px;
+}
+.login-a {
+    color: blue;
+    padding: 5px 0;
+}
+.boutton {
+    padding: 10px 35px 10px 35px;
+}
+.loginBtn{
+    color: black;
+}
+/*-------------------------------signup/inscription-css-----------------------------------------*/
+.signup-div-body{
+    width: 100%;
+    height: 81.9vh;
+    box-sizing: border-box;
+    background-image: url('image/inscription/LOISIR_ET_DIVERTISSEMENT.svg');
+    background-repeat: no-repeat;
+    background-size: 1919px 856px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sign-up h2{
+    font-family: "Gasoek One", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing:2px;
+    text-align: left;
+}
+.sign-up-form{
+    border-radius: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    padding: 15px;
+    width: 771px;
+    height: 410px;
+    box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up-form form{
+    padding-top: 20px;
+}
+.sign-up-information{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 500px;
+}
+
+.sign-up-information input{
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 400px;
+    font-size: 15px;
+}
+.password{
+    display: flex;
+    justify-content: space-between;
+}
+.sign-up-links{
+    display: flex;
+    width: 100%;
+    padding-left: 100px;
+    gap: 38px;
+}
+.sign-up-links button{
+    width: 102px;
+    height: 38px;
+}
+
+.sign-up-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up-links a{
+    color: blue;
+    cursor: pointer;
+}
+.sign-up-checkbox{
+    display: flex;
+    padding-left: 95px;
+    gap: 12px;
+}
+
+.checkbox input{
+    width: fit-content;
+}
+.button{
+    --bg: white;
+    background: white;
+    width:fit-content;
+    padding: 5px 20px;
+}
+/*---------------------------------------------addGroup-------------------------------------*/
+.addGroup{
+    background-image: url('image/profile/FOND_PROFIL.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 82.4vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+.titre-addgroup h2{
+    font-family: "Gasoek One", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing:2px;
+    margin: 150px 0 20px;
+}
+.addGroup-div{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.addGroup-div form{
+    border-radius: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    padding: 15px;
+    width: 671px;
+    height: 410px;
+    box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -20px 25px 0px 0px rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.form-body{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    width: 60%;
+}
+.information input{
+    width: 50%;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.nom-groupe{
+    display: flex;
+    justify-content: space-between;
+}
+.nom-groupe label{
+    width: 50%;
+}
+.description{
+    display: flex;
+    justify-content: space-between;
+}
+.description label{
+    width: 44%;
+    text-align: right;
+}
+.description textarea{
+    width: 50%;
+    height: 25vh;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.visib-act{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 40%;
+    padding-top: 13px;
+}
+.visibilite{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.visibilite label{
+    width:63%;
+}
+.checkbox {
+    appearance: none;
+    width: 11%;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    border: 2px solid black;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .checkbox::before {
+    font-family: "Quicksand", sans-serif;
+    position: absolute;
+    bottom: -4px;
+    left: 1px;
+    font-size: 40px;
+    color: #AADC80;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .checkbox:checked::before {
+    animation: zoom 0.5s ease-in-out;
+    transform: scale(1);
+    content: "✔";
+  }
+  
+  @keyframes zoom {
+    0% {
+      transform: scale(0);
+    }
+  
+    20% {
+      transform: scale(1.5);
+    }
+  
+    40% {
+      transform: scale(0.5);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  
+    70% {
+      transform: scale(1.2);
+    }
+  
+    90% {
+      transform: scale(0.8);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+    }
+.activite{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.activite label{
+    padding-left: 10px;
+    width: 34%;
+}
+.form-control{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+}
+#jambe-gauche-noodle{
+    width: 30vw;
 }

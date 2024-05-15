@@ -13,14 +13,14 @@
         if(isLoggedOn()){
             ?>
             <a href="./?action=search">
-                <span>Chercher un group</span>
+                <span>Chercher un groupe</span>
             </a>
             <?php
         }
         else{
             ?>
             <a href="./?action=connexion">
-                <span>Chercher un group</span>
+                <span>Chercher un groupe</span>
             </a>
             <?php
         }

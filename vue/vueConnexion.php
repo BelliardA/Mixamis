@@ -1,12 +1,12 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
-    <link rel="stylesheet" href="style/connexion.css">
+    <link rel="stylesheet" href="style/menu.css">
     <title>Connexion</title>
 </head>
 
 
-<section>
-    <div class="div-body">
+<section class="section">
+    <div class="log-in-div-body">
         <img src="style/image/log-in/JAMBES_3-gauche.svg" id="image-gauche">
         <div class="login">
             <h1>LOGIN</h1>
@@ -23,9 +23,9 @@
                         </div>
                     </div>
                     <div class="login-links">
-                        <a href=".?/action=action" class="button">Login</a>
-                        <a href="#"> <strong> Forgot password ?</strong></a>
-                        <a href="./?action=register"> <strong>Sign-Up</strong></a>
+                        <a href=".?/action=action" class="button loginBtn">Login</a>
+                        <a href="#" class="login-a"> <strong> Forgot password ?</strong></a>
+                        <a href="./?action=register" class="login-a"> <strong>Sign-Up</strong></a>
                     </div>
                 </form>
             </div>
